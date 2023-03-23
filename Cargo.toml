@@ -1,0 +1,13 @@
+[package]
+name = "tc37x-rt"
+version = "0.1.0"
+edition = "2021"
+authors = [" HighTec EDV-Systeme GmbH"]
+license-file = "LICENSE"
+
+[build-dependencies]
+cc = "1.0.73"
+
+[dependencies]
+tc37x-pac = { path = "../tc37x-pac", features = ["scu"]}
+defmt = "0.3.2"
