@@ -2,7 +2,7 @@
 
 Demo implementation of a Runtime for the [TC375-Lite kit] kindly provided by [HighTec].
 
-For full usage documentation refer to the [veecle-aurix-demo] crate.
+For usage and documentation refer to the [veecle-aurix-demo] crate.
 
 [HighTec]: https://hightec-rt.com/en/
 [veecle-aurix-demo]: https://github.com/veecle/tc37x-demo

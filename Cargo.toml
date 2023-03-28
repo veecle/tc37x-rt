@@ -2,7 +2,7 @@
 name = "tc37x-rt"
 version = "0.1.0"
 edition = "2021"
-authors = [" HighTec EDV-Systeme GmbH"]
+authors = ["HighTec EDV-Systeme GmbH"]
 license-file = "LICENSE"
 
 [build-dependencies]
