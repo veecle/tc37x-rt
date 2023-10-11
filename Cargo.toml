@@ -9,5 +9,5 @@ license-file = "LICENSE"
 cc = "1.0.73"
 
 [dependencies]
-tc37x-pac = { path = "../tc37x-pac", features = ["scu"]}
+tc37x-pac = { git = "https://github.com/veecle/tc37x-pac.git", features = ["scu"]}
 defmt = "0.3.2"
