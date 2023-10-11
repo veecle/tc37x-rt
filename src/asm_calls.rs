@@ -23,10 +23,15 @@ const CPU_CORE_ID: u32 = 0xFE1C;
  * Read CPU core id.
  */
 pub fn read_cpu_core_id() -> u32 {
-    #[allow(unused_assignments)]
-    let mut value: u32;
-    unsafe {
-        asm!("mfcr {0}, 0xFE1C", out(reg32) value);
+    #[cfg(target = "tc162-htc-none")]
+    {
+        #[allow(unused_assignments)]
+        let mut value: u32;
+        unsafe {
+            asm!("mfcr {0}, 0xFE1C", out(reg32) value);
+        }
+        value
     }
-    value
+    #[cfg(not(target = "tc162-htc-none"))]
+    unimplemented!("This function is only available on tricore");
 }
